@@ -6,45 +6,666 @@
 
 # Doctor 1
 doctor1 = Doctor.create({name: "Hannah Rhodes"})
+# Patient 1
 patient_1_for_doctor1 = Patient.create({
   doctor_id: doctor1.id,
   name: "Joan Didion"
 })
+# Appointments: Patient 1 for Doctor 1
+appointment_1_patient_1_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_1_for_doctor1.id,
+  start_time: Date.new(2021, 6, 3),
+  duration_in_minutes: 50
+})
+appointment_2_patient_1_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_1_for_doctor1.id,
+  start_time: Date.new(2020, 8, 3),
+  duration_in_minutes: 50
+})
+appointment_3_patient_1_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_1_for_doctor1.id,
+  start_time: Date.new(2022, 3, 8),
+  duration_in_minutes: 50
+})
+appointment_4_patient_1_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_1_for_doctor1.id,
+  start_time: Date.new(2019, 4, 12),
+  duration_in_minutes: 50
+})
+appointment_5_patient_1_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_1_for_doctor1.id,
+  start_time: Date.new(2018, 3, 12),
+  duration_in_minutes: 50
+})
+appointment_6_patient_1_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_1_for_doctor1.id,
+  start_time: Date.new(2022, 9, 12),
+  duration_in_minutes: 50
+})
+appointment_7_patient_1_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_1_for_doctor1.id,
+  start_time: Date.new(2023, 3, 12),
+  duration_in_minutes: 50
+})
+appointment_8_patient_1_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_1_for_doctor1.id,
+  start_time: Date.new(2023, 4, 10),
+  duration_in_minutes: 50
+})
+appointment_9_patient_1_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_1_for_doctor1.id,
+  start_time: Date.new(2023, 9, 8),
+  duration_in_minutes: 50
+})
+appointment_10_patient_1_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_1_for_doctor1.id,
+  start_time: Date.new(2023, 12, 12),
+  duration_in_minutes: 50
+})
+
+# Patient 2
 patient_2_for_doctor1 = Patient.create({
   doctor_id: doctor1.id,
   name: "Michael Lewis"
 })
+# Appointments Patient 2 for Doctor 1
+appointment_1_patient_2_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_2_for_doctor1.id,
+  start_time: Date.new(2021, 7, 3),
+  duration_in_minutes: 50
+})
+appointment_2_patient_2_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_2_for_doctor1.id,
+  start_time: Date.new(2020, 9, 3),
+  duration_in_minutes: 50
+})
+appointment_3_patient_2_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_2_for_doctor1.id,
+  start_time: Date.new(2022, 2, 8),
+  duration_in_minutes: 50
+})
+appointment_4_patient_2_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_2_for_doctor1.id,
+  start_time: Date.new(2019, 2, 12),
+  duration_in_minutes: 50
+})
+appointment_5_patient_2_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_2_for_doctor1.id,
+  start_time: Date.new(2018, 4, 12),
+  duration_in_minutes: 50
+})
+appointment_6_patient_2_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_2_for_doctor1.id,
+  start_time: Date.new(2022, 9, 14),
+  duration_in_minutes: 50
+})
+appointment_7_patient_2_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_2_for_doctor1.id,
+  start_time: Date.new(2023, 4, 12),
+  duration_in_minutes: 50
+})
+appointment_8_patient_2_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_2_for_doctor1.id,
+  start_time: Date.new(2023, 5, 10),
+  duration_in_minutes: 50
+})
+appointment_9_patient_2_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_2_for_doctor1.id,
+  start_time: Date.new(2023, 6, 8),
+  duration_in_minutes: 50
+})
+appointment_10_patient_2_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_2_for_doctor1.id,
+  start_time: Date.new(2023, 11, 12),
+  duration_in_minutes: 50
+})
+
+# Patient 3
 patient_3_for_doctor1 = Patient.create({
   doctor_id: doctor1.id, 
   name: "Michael Pollan"
 })
+appointment_1_patient_3_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2021, 6, 3),
+  duration_in_minutes: 50
+})
+appointment_2_patient_3_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2020, 10, 3),
+  duration_in_minutes: 50
+})
+appointment_3_patient_3_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2022, 7, 12),
+  duration_in_minutes: 50
+})
+appointment_4_patient_3_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2019, 1, 12),
+  duration_in_minutes: 50
+})
+appointment_5_patient_3_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2018, 7, 12),
+  duration_in_minutes: 50
+})
+appointment_6_patient_3_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2025, 3, 14),
+  duration_in_minutes: 50
+})
+appointment_7_patient_3_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2023, 6, 12),
+  duration_in_minutes: 50
+})
+appointment_8_patient_3_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2023, 8, 10),
+  duration_in_minutes: 50
+})
+appointment_9_patient_3_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2023, 3, 8),
+  duration_in_minutes: 50
+})
+appointment_10_patient_3_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2023, 10, 12),
+  duration_in_minutes: 50
+})
+
+# Patient 4 for Doctor 1
 patient_4_for_doctor1 = Patient.create({
   doctor_id: doctor1.id,
   name: "Charles Dickens"
 })
+appointment_1_patient_4_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_4_for_doctor1.id,
+  start_time: Date.new(2021, 4, 3),
+  duration_in_minutes: 50
+})
+appointment_2_patient_4_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_3_for_doctor1.id,
+  start_time: Date.new(2020, 8, 3),
+  duration_in_minutes: 50
+})
+appointment_3_patient_4_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_4_for_doctor1.id,
+  start_time: Date.new(2022, 3, 12),
+  duration_in_minutes: 50
+})
+appointment_4_patient_4_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_4_for_doctor1.id,
+  start_time: Date.new(2019, 2, 12),
+  duration_in_minutes: 50
+})
+appointment_5_patient_4_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_4_for_doctor1.id,
+  start_time: Date.new(2018, 9, 12),
+  duration_in_minutes: 50
+})
+appointment_6_patient_4_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_4_for_doctor1.id,
+  start_time: Date.new(2023, 1, 14),
+  duration_in_minutes: 50
+})
+appointment_7_patient_4_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_4_for_doctor1.id,
+  start_time: Date.new(2023, 8, 12),
+  duration_in_minutes: 50
+})
+appointment_8_patient_4_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_4_for_doctor1.id,
+  start_time: Date.new(2023, 6, 10),
+  duration_in_minutes: 50
+})
+appointment_9_patient_4_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_4_for_doctor1.id,
+  start_time: Date.new(2023, 2, 8),
+  duration_in_minutes: 50
+})
+appointment_10_patient_4_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_4_for_doctor1.id,
+  start_time: Date.new(2023, 9, 12),
+  duration_in_minutes: 50
+})
+
+# Patient 5 for Doctor 1
 patient_5_for_doctor1 = Patient.create({
   doctor_id: doctor1.id,
   name: "Malcolm Gladwell"
 })
+appointment_1_patient_5_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2020, 6, 3),
+  duration_in_minutes: 50
+})
+appointment_2_patient_5_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2019, 10, 3),
+  duration_in_minutes: 50
+})
+appointment_3_patient_5_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2020, 7, 12),
+  duration_in_minutes: 50
+})
+appointment_4_patient_5_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2018, 1, 12),
+  duration_in_minutes: 50
+})
+appointment_5_patient_5_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2017, 7, 12),
+  duration_in_minutes: 50
+})
+appointment_6_patient_5_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2024, 3, 14),
+  duration_in_minutes: 50
+})
+appointment_7_patient_5_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2025, 6, 12),
+  duration_in_minutes: 50
+})
+appointment_8_patient_5_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2024, 8, 10),
+  duration_in_minutes: 50
+})
+appointment_9_patient_5_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2024, 3, 8),
+  duration_in_minutes: 50
+})
+appointment_10_patient_5_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2024, 10, 12),
+  duration_in_minutes: 50
+})
+
+# Patient 6 for Doctor 1
 patient_6_for_doctor1 = Patient.create({
   doctor_id: doctor1.id,
   name: "Trevor Noah"
 })
+appointment_1_patient_6_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_6_for_doctor1.id,
+  start_time: Date.new(2020, 6, 5),
+  duration_in_minutes: 50
+})
+appointment_2_patient_6_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_6_for_doctor1.id,
+  start_time: Date.new(2019, 10, 4),
+  duration_in_minutes: 50
+})
+appointment_3_patient_6_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_6_for_doctor1.id,
+  start_time: Date.new(2020, 7, 8),
+  duration_in_minutes: 50
+})
+appointment_4_patient_6_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_6_for_doctor1.id,
+  start_time: Date.new(2018, 1, 22),
+  duration_in_minutes: 50
+})
+appointment_5_patient_6_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_6_for_doctor1.id,
+  start_time: Date.new(2017, 7, 15),
+  duration_in_minutes: 50
+})
+appointment_6_patient_6_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_5_for_doctor1.id,
+  start_time: Date.new(2024, 3, 24),
+  duration_in_minutes: 50
+})
+appointment_7_patient_6_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_6_for_doctor1.id,
+  start_time: Date.new(2025, 6, 13),
+  duration_in_minutes: 50
+})
+appointment_8_patient_6_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_6_for_doctor1.id,
+  start_time: Date.new(2024, 8, 11),
+  duration_in_minutes: 50
+})
+appointment_9_patient_6_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_6_for_doctor1.id,
+  start_time: Date.new(2024, 3, 7),
+  duration_in_minutes: 50
+})
+appointment_10_patient_6_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_6_for_doctor1.id,
+  start_time: Date.new(2024, 10, 18),
+  duration_in_minutes: 50
+})
+
+# Patient 7 for Doctor 1
 patient_7_for_doctor1 = Patient.create({
   doctor_id: doctor1.id,
   name: "Dave Eggers"
 })
+appointment_1_patient_7_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2020, 6, 10),
+  duration_in_minutes: 50
+})
+appointment_2_patient_7_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2019, 10, 13),
+  duration_in_minutes: 50
+})
+appointment_3_patient_7_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2020, 7, 20),
+  duration_in_minutes: 50
+})
+appointment_4_patient_7_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2018, 1, 26),
+  duration_in_minutes: 50
+})
+appointment_5_patient_7_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2017, 7, 24),
+  duration_in_minutes: 50
+})
+appointment_6_patient_7_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2024, 3, 18),
+  duration_in_minutes: 50
+})
+appointment_7_patient_7_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2025, 6, 19),
+  duration_in_minutes: 50
+})
+appointment_8_patient_7_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2024, 8, 25),
+  duration_in_minutes: 50
+})
+appointment_9_patient_7_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2024, 3, 18),
+  duration_in_minutes: 50
+})
+appointment_10_patient_7_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2024, 10, 19),
+  duration_in_minutes: 50
+})
+
+#Patient 8 for Doctor 1
 patient_8_for_doctor1 = Patient.create({
   doctor_id: doctor1.id,
   name: "Talbot Crawford"
 })
+appointment_1_patient_8_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_8_for_doctor1.id,
+  start_time: Date.new(2020, 6, 17),
+  duration_in_minutes: 50
+})
+appointment_2_patient_8_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_8_for_doctor1.id,
+  start_time: Date.new(2019, 10, 18),
+  duration_in_minutes: 50
+})
+appointment_3_patient_8_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_8_for_doctor1.id,
+  start_time: Date.new(2020, 7, 2),
+  duration_in_minutes: 50
+})
+appointment_4_patient_8_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_8_for_doctor1.id,
+  start_time: Date.new(2018, 1, 4),
+  duration_in_minutes: 50
+})
+appointment_5_patient_8_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_8_for_doctor1.id,
+  start_time: Date.new(2017, 7, 2),
+  duration_in_minutes: 50
+})
+appointment_6_patient_8_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_8_for_doctor1.id,
+  start_time: Date.new(2024, 3, 5),
+  duration_in_minutes: 50
+})
+appointment_7_patient_8_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_8_for_doctor1.id,
+  start_time: Date.new(2025, 6, 9),
+  duration_in_minutes: 50
+})
+appointment_8_patient_8_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_8_for_doctor1.id,
+  start_time: Date.new(2024, 8, 10),
+  duration_in_minutes: 50
+})
+appointment_9_patient_8_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_8_for_doctor1.id,
+  start_time: Date.new(2024, 3, 23),
+  duration_in_minutes: 50
+})
+appointment_10_patient_8_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_8_for_doctor1.id,
+  start_time: Date.new(2024, 10, 9),
+  duration_in_minutes: 50
+})
+
+# Patient 9 for Doctor 1
 patient_9_for_doctor1 = Patient.create({
   doctor_id: doctor1.id,
   name: "Arjun Belloni"
 })
+appointment_1_patient_9_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_9_for_doctor1.id,
+  start_time: Date.new(2020, 6, 8),
+  duration_in_minutes: 50
+})
+appointment_2_patient_9_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_9_for_doctor1.id,
+  start_time: Date.new(2019, 10, 23),
+  duration_in_minutes: 50
+})
+appointment_3_patient_9_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_9_for_doctor1.id,
+  start_time: Date.new(2020, 7, 5),
+  duration_in_minutes: 50
+})
+appointment_4_patient_9_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_9_for_doctor1.id,
+  start_time: Date.new(2018, 1, 13),
+  duration_in_minutes: 50
+})
+appointment_5_patient_9_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_9_for_doctor1.id,
+  start_time: Date.new(2017, 7, 2),
+  duration_in_minutes: 50
+})
+appointment_6_patient_9_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_9_for_doctor1.id,
+  start_time: Date.new(2024, 3, 9),
+  duration_in_minutes: 50
+})
+appointment_7_patient_9_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_9_for_doctor1.id,
+  start_time: Date.new(2025, 6, 9),
+  duration_in_minutes: 50
+})
+appointment_8_patient_9_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_9_for_doctor1.id,
+  start_time: Date.new(2024, 8, 4),
+  duration_in_minutes: 50
+})
+appointment_9_patient_9_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_9_for_doctor1.id,
+  start_time: Date.new(2024, 3, 6),
+  duration_in_minutes: 50
+})
+appointment_10_patient_9_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_9_for_doctor1.id,
+  start_time: Date.new(2024, 10, 27),
+  duration_in_minutes: 50
+})
+
+# Patient 10 for Doctor 1
 patient_10_for_doctor1 = Patient.create({
   doctor_id: doctor1.id,
   name: "Inna Wootton"
+})
+appointment_1_patient_10_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_10_for_doctor1.id,
+  start_time: Date.new(2020, 6, 19),
+  duration_in_minutes: 50
+})
+appointment_2_patient_10_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_10_for_doctor1.id,
+  start_time: Date.new(2019, 10, 8),
+  duration_in_minutes: 50
+})
+appointment_3_patient_10_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_10_for_doctor1.id,
+  start_time: Date.new(2020, 7, 7),
+  duration_in_minutes: 50
+})
+appointment_4_patient_10_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_10_for_doctor1.id,
+  start_time: Date.new(2018, 1, 2),
+  duration_in_minutes: 50
+})
+appointment_5_patient_10_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_10_for_doctor1.id,
+  start_time: Date.new(2017, 7, 6),
+  duration_in_minutes: 50
+})
+appointment_6_patient_10_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_7_for_doctor1.id,
+  start_time: Date.new(2024, 3, 8),
+  duration_in_minutes: 50
+})
+appointment_7_patient_10_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_10_for_doctor1.id,
+  start_time: Date.new(2024, 6, 9),
+  duration_in_minutes: 50
+})
+appointment_8_patient_10_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_10_for_doctor1.id,
+  start_time: Date.new(2024, 8, 10),
+  duration_in_minutes: 50
+})
+appointment_9_patient_10_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_10_for_doctor1.id,
+  start_time: Date.new(2024, 3, 11),
+  duration_in_minutes: 50
+})
+appointment_10_patient_10_dr_1 = Appointment.create({
+  doctor_id: doctor1.id,
+  patient_id: patient_10_for_doctor1.id,
+  start_time: Date.new(2024, 10, 13),
+  duration_in_minutes: 50
 })
 
 # Doctor 2
