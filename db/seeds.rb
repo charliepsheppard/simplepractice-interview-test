@@ -4359,7 +4359,7 @@ appointment_7_patient_6_dr_7 = Appointment.create({
   duration_in_minutes: 50
 })
 appointment_8_patient_6_dr_7 = Appointment.create({
-  doctor_id: doctor7id,
+  doctor_id: doctor7.id,
   patient_id: patient_6_for_doctor7.id,
   start_time: Date.new(2024, 8, 11),
   duration_in_minutes: 50
