@@ -1,6 +1,7 @@
 class Api::AppointmentsController < ApplicationController
   def index
     # TODO: return all values
+    # TODO: return filtered values
     if params[:past] == "1"
       @appointments = Appointment.where(
         'start_time < ?', DateTime.now
@@ -9,12 +10,13 @@ class Api::AppointmentsController < ApplicationController
       @appointments = Appointment.where(
         'start_time > ?', DateTime.now
       )
+    elsif params[:length] && params[:page]
+      @appointments = Appointment.paginate(:page => params[:page], :per_page => params[:length].to_i)
     else
       @appointments = Appointment.all
     end
     render json: @appointments
 
-    # TODO: return filtered values
     # head :ok
   end
 
