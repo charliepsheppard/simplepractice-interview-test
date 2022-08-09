@@ -21,13 +21,13 @@ class Api::AppointmentsController < ApplicationController
   end
 
   def create
-    # TODO:
-
+    @appointment = Appointment.create(appointment_params)
+    render json: @appointment
   end
 
   private
 
   def appointment_params
-    params.require(:appointment).permit(:patient, :doctor, :start_time, :duration_in_minutes)
+    params.require(:appointment).permit(:doctor_id, :patient_id, :start_time, :duration_in_minutes)
   end
 end
