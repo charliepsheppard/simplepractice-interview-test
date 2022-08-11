@@ -15,6 +15,7 @@ gem "bootsnap", ">= 1.4.2", require: false
 
 gem 'active_model_serializers', '~> 0.10.13'
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
+gem 'faker', '~> 2.22'
 
 group :development, :test do
   # Call "byebug" anywhere in the code to stop execution and get a debugger console
